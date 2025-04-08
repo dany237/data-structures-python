@@ -7,5 +7,5 @@ from .tree import BinarySearchTree
 from .graph import Graph
 from .queue import Queue
 from .array import Array
-
+from .stack import Stack
 

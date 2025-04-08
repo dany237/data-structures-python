@@ -1,22 +1,27 @@
 class Stack:
-    def __init__(self, para=[]):
-      self.stack = para
-      pass
+    def __init__(self, para=None):
+        if para is None:
+            self.stack = []
+        else:
+            self.stack = para
 
-    def push(self,newElement):
-      self.stack.append(newElement)
-    #  return self.para.append(self,newElement)
+    def push(self, newElement):
+        self.stack.append(newElement)
 
     def pop(self):
-      last.element = self.stack[len(self.stack)-1]
-      self.stack.remove(len(self.stack)-1)
-      return last.element
+        if not self.isEmpty():
+            return self.stack.pop()
+        else:
+            return "Stack is empty"
 
     def top(self):
-      self.stack[len(self.stack)-1]
+        if not self.isEmpty():
+            return self.stack[-1]
+        else:
+            return "Stack is empty"
 
     def isEmpty(self):
-      len(self.stack)==0
+        return len(self.stack) == 0
 
     def display_stack(self):
-      print(self.Stack)
+        print(self.stack)
