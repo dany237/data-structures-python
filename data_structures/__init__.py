@@ -6,5 +6,6 @@ from .circular_linked_list import CircularLinkedList
 from .tree import BinarySearchTree
 from .graph import Graph
 from .queue import Queue
+from .array import Array
 
 
